@@ -8,9 +8,11 @@ This is a minimalist 2-line shell script using Unix utilities to send a local wa
 
 ### Usage
 
-1. Edit the scriptto change 00:00:00:00:00:00 to the MAC address of the computer to be woken.
+1. Edit the script to change 00:00:00:00:00:00 to the MAC address of the computer to be woken.
 2. Run the script.
-    ./wake
+```
+./wake
+```
 
 ### Install
 
@@ -23,11 +25,15 @@ Download and install the nmap package following these [instructions](https://nma
 
 * RedHat family
 
-    sudo yum install nmap
+```
+sudo yum install nmap
+```
 
 * Debian family
 
-    sudo apt-get install nmap
+```
+sudo apt-get install nmap
+```
 
 ### Notes
 
@@ -48,4 +54,4 @@ subnet-specific broadcast address (such as 172.16.1.255).
 
 ### License
 
-CC0
+Unlicense
