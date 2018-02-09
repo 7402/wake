@@ -37,10 +37,8 @@ sudo apt-get install nmap
 
 ### Notes
 
-It is possible to replace `ncat` with `nc` in the script (making appropriate changes to the options),
-depending on the [version](https://unix.stackexchange.com/questions/368155/what-are-the-differences-between-ncat-nc-and-netcat#368160)
-of `nc` you have, but note in particular that the BSD version of `nc` on macOS **will not** work, as it has a bug that
-prevents the sending of broadcast packets.
+It may be possible to replace `ncat -w1 -u` with `nc -w1 -u -b` in the script,
+depending on the [version](https://unix.stackexchange.com/questions/368155/what-are-the-differences-between-ncat-nc-and-netcat#368160) of `nc` that you have. Note, however, that the older BSD version of `nc` on macOS **will not** work.
 
 It is possible accomplish the same thing by writing a python or perl program instead of using ncat.
 
