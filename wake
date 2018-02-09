@@ -1,0 +1,2 @@
+M=00:00:00:00:00:00
+echo FFFFFFFFFFFF$M$M$M$M$M$M$M$M$M$M$M$M$M$M$M$M | tr -d ':' | xxd -r -p | ncat -w1 -u 255.255.255.255 9
